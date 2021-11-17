@@ -1,0 +1,170 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    ".";
+}
+
+.menu-button {
+  width: 20px;
+  height: 4px;
+  background: #0e3c89;
+  margin: 20px 0 0 20px;
+}
+
+.menu-button:before {
+  display: block;
+  content: "";
+  width: 28px;
+  height: 4px;
+  box-shadow: 0 -8px 0 0 #0e3c89, 0 8px 0 0 #0e3c89;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column0 {
+  display: grid;
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 300px;
+  text-align: center; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  height: 300px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
+.bignav {
+  display: flex;
+  height: 100vh;
+  width: fit-content;
+}
+.Navbar {
+  display: block;
+  list-style: none;
+  size: 30px;
+  white-space: 20rem;
+  width: 12rem;
+}
+.Navbar li {
+  letter-spacing: 2px;
+  padding: 28px;
+}
+.Navbar button {
+  padding: 8px;
+  margin: 2rem;
+}
+.d1 {
+  width: 80%;
+  display: flex;
+}
+
+.row1 {
+  width: 80%;
+  display: flex;
+  margin-top: 1rem;
+  float: right;
+}
+.row1 h1 {
+  text-align: center;
+  margin: 6rem;
+  font-size: 46px;
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  float: right;
+}
+.row1 p {
+  position: right;
+  width: 14rem;
+  text-align: center;
+  margin-right: 0rem;
+  margin-left: 3rem;
+  margin-top: 8rem;
+  padding: 30px;
+  padding: 2rem;
+  max-height: 30vh;
+  text-align: start;
+}
+
+.row2 {
+  position: absolute;
+  display: flex;
+  margin-top: 10rem;
+  padding: 1px;
+}
+.Cart {
+  color: #cfcece;
+  border-radius: 35px;
+  width: 80px;
+  cursor: pointer;
+  background: rgb(212, 20, 20);
+  border: none;
+}
+.cards {
+  display: flex;
+  position: relative;
+  margin-right: 3rem;
+  float: left;
+}
+.card {
+  border: 1px solid rgb(236, 233, 233);
+  border-radius: 6px;
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  margin: 10px;
+  margin-top: 35vh;
+  box-shadow: 10px 5px 5px #81808f9d;
+  cursor: pointer;
+  align-items: center;
+  max-height: 180px;
+}
+.card_img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 10px auto 0;
+}
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card_info {
+  padding-bottom: 20px;
+  size: 10px;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+h1:hover {
+  color: black;
+}
